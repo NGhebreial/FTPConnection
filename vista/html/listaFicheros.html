@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script>window.$ = window.jQuery = require('../js/auxiliar/jquery.js');</script>
+    <script type="text/javascript" src="../js/auxiliar/jquery.js"></script>
+    <script>if (window.module) module = window.module;</script>   
+    <script type="text/javascript" src="../js/auxiliar/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/auxiliar/dropzone.js"></script>   
+    <link rel="stylesheet" type="text/css" href="../css/dropzone.css"></link>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
+     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"></link>
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+	 <script type="text/javascript" src="../js/auxiliar/blockUi.js"></script>
+	 <script type="text/javascript" src="../js/listaFicheros.js"></script>
+    <title>Ficheros</title>   
+  </head>
+  <body>
+  <div id="cabecera">
+  	<img id="principal" src="../css/images/volver.png" title="Volver a la carpeta principal" />
+  	<div id="rutaNavegacion">
+	  	<span id='Inicio' class='ruta'>Inicio</span><img class="flechaRutaNavegacion" alt="flecha" src="../css/images/flecha.png"/>
+	  	<span  id="rutaNavegacionAmpliada"></span>
+	</div>
+	<div id="cajaIconosCabecera" class="cajaCabecera" >
+		<div id="cajaInputCarpeta">
+	  		<span id="toogleInputCarpeta" title="Escribe el nombre de la carpeta"><input type="text" id="nombreNuevaCarpeta" name="nombreNuevaCarpeta" value=""/>
+	  		<button id="ok" class="btn btn-info">Crear</button></span>
+  		</div>
+  		<div id="cajaInputSubeFichero">
+  			<span id="mensajeSubeFichero">
+	  			Pulsa en el botón para subir los ficheros:
+	  		</span>
+	  		<span id="toogleSubeFichero" title="Subir ficheros">
+	  		<button id="subirFicherosDropzone" class="btn btn-info">Subir ficheros</button>
+	  		</span>
+	  	</div>
+	  	<img id="imgDescargaNuevaVersion" class="classIconosCabecera imgDescargaNuevaVersion" alt="/ftpConexionDescarga.html" src="../css/images/descargar.png" title="Descargar Actualización"/>
+	  	<img id="ordenaNombre" class="classIconosCabecera" src="../css/images/flechaDown.png" title="Pulsa aquí para ordenar por nombre" />
+	  	<img id="nuevaCarpeta" class="classIconosCabecera"  src='../css/images/anadirCarpeta.png' title="Pulsa aquí para crear carpeta"/>
+	  	<img id="subirFichero" class="classIconosCabecera" src="../css/images/anadirFichero.png" title="Pulsa aquí para subir un fichero" />
+	  	<img id="refrescar" class="classIconosCabecera" src="../css/images/refresh.png" title="Refrescar"/>
+	  	<img id="salir" class="classIconosCabecera" title="Cerrar programa" src="../css/images/exit.png"/>
+  	</div>
+  	
+  	<div id="cajaOpcionesFichero" class="cajaCabecera" >
+	  	<button id="descargaFichero" class="classIconosCabecera btn btn-success">Abrir fichero</button>
+	  	<button id="moverFichero" class="moverArchivo classIconosCabecera btn btn-info">Mover fichero</button>
+	  	<button id="eliminaFichero" class="classIconosCabecera btn btn-danger">Eliminar fichero</button>
+	  	<button class="cancelar classIconosCabecera btn btn-default">Cancelar</button>	 
+  	</div>
+  	
+  	<div id="cajaOpcionesCarpeta" class="cajaCabecera" >
+	  	<button id="abrirCarpeta" class="classIconosCabecera btn btn-success">Abrir carpeta</button>
+	  	<button id="moverCarpeta" class="moverArchivo classIconosCabecera btn btn-info">Mover carpeta</button>
+	  	<button id="eliminaCarpeta" class="classIconosCabecera btn btn-danger">Eliminar carpeta</button>	  	
+	  	<button class="cancelar classIconosCabecera btn btn-default">Cancelar</button>
+  	</div>
+  	
+  	<div id="cajaOpcionesMoverFichero" class="cajaCabecera" >
+  		<span>Selecciona la carpeta de destino y pulsa el botón 
+		  	<button id="cambiarArchivoCarpeta" class="classIconosCabecera btn btn-success">Mover aquí</button>
+		  	<button id="cancelarMoverArchivo" class="cancelar classIconosCabecera btn btn-default">Cancelar</button>
+	  	</span>
+  	</div>
+  	
+  </div>
+  	
+  	<form id="formFile" action="/" class="dropzone dz-clickable" enctype="multipart/form-data"  method="post"></form>
+  	<div id="preview-template" style="display: none;"></div>
+	<input type="hidden" id="ruta" name="ruta" value=""/>
+	<input type="hidden" id="listaFicheros" name="listaFicheros" value=""/>
+	<div id="cargaFicheros"></div>
+  </body>
+</html>

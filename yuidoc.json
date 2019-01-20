@@ -1,0 +1,10 @@
+{
+	"name": "Documentación de FTP Connection ",
+	"description": "API para el programa FTPConexion hecho con NodeJS y Electron",
+	"version": "2.6.5",
+	"url" : "",
+	"logo": "",
+	"options": {
+		"outdir": "./out"
+	}
+}

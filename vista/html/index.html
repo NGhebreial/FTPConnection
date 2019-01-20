@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+	<script>window.$ = window.jQuery = require('../js/auxiliar/jquery.js');</script>
+	<script type="text/javascript" src="../js/auxiliar/jquery.js"></script>
+	<script>if (window.module) module = window.module;</script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	</link>
+	<title></title>
+</head>
+
+<body id="cuerpo">
+	<img id="mainLogo" alt="Ftp connection" src="../css/images/logo.png" />
+	<div id="loginCuerpo">
+		<div>
+			<span class="inputLogin"><label>URL:</label><input type="text" id="url" tabindex="1" name="url" value="" /></span>
+			<span class="inputLogin"><label>Puerto:</label><input type="text" id="puerto" tabindex="2" name="puerto" value="" /></span>
+			<span class="inputLogin"><label>Usuario:</label><input type="text" id="usuario" tabindex="3" name="usuario" value="" /></span>
+			<span class="inputLogin"><label>Contraseña:</label><input type="password" id="password" tabindex="4" name="password"
+				 value="" /></span>
+			<label for="recordar" id="labelRecordar">
+				<input type="checkbox" name="recordar" id="recordar" checked>
+				<span>Recordar datos de acceso</span>
+			</label><br>
+			<button type="button" name="login" id="login" tabindex="5">Login</button>
+		</div>
+	</div>
+	<div id="cajaDescargaNuevaVersion">
+		<img id="descargaNuevaVersion" alt="/ftpConexionDescarga.html" src="../css/images/descargar.png"
+		 title="Descargar Actualización" />
+		<span></span>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+{
+	"name": "ftp-connection",
+	"version": "2.7.1",
+	"description": "Conexión a ftp",
+	"main": "main.js",
+	"devDependencies": {
+		"electron-builder": "^13.0.0",
+		"electron-prebuilt": "~1.4.X"
+	},
+	"dependencies": {
+		"async": "^2.3.0",
+		"chokidar": "git+https://github.com/NGhebreial/chokidar",
+		"dateformat": "^1.0.12",
+		"electron": "^4.0.1",
+		"electron-log": "^1.2.1",
+		"electron-router": "^0.4.0",
+		"electron-settings": "1.1.1",
+		"enfsmkdirp": "^0.1.0",
+		"fs-extra": "^1.0.0",
+		"jsftp": "git+https://github.com/NGhebreial/jsftp.git",
+		"node-notifier": "^4.6.1",
+		"upath": "^0.2.0",
+		"xmlhttprequest": "^1.8.0"
+	},
+	"build": {
+		"appId": "E6E918E5-8E4C-4742-B518-FCFCEE0574E7",
+		"category": "public.app-category.productivity",
+		"win": {
+			"title": "FTP Connection",
+			"authors": "Nadia Ghebreial",
+			"icon": "vista/css/images/logo.ico"
+		},
+		"mac": {
+			"title": "FTP Connection",
+			"authors": "Nadia Ghebreial",
+			"icon": "vista/css/images/logo.png"
+		}
+	},
+	"scripts": {
+		"postinstall": "install-app-deps",
+		"pack-win": "electron-packager ./ FTPconexion --platform=win32 --arch=ia32 --asar=true --overwrite=true --ignore=dist",
+		"pack-macos": "electron-packager ./ FTPconexion --platform=mas --asar=true --overwrite=true --ignore=dist",
+		"build-win": "build --arch=ia32",
+		"build-mac": "build --mac ",
+		"start": "electron ."
+	},
+	"author": "Nadia Ghebreial",
+	"repository": "",
+	"license": "MIT",
+	"readmeFilename": "README.md"
+}

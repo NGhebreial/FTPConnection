@@ -1,0 +1,271 @@
+html,html>*{
+	font-family: sans-serif!important;
+}
+
+body{
+	background-image: url(images/backgroundBody.jpg);
+}
+
+#mainLogo{
+    margin-top: -53px;
+    cursor: pointer;
+    width: 185px;
+}
+
+#cajaDescargaNuevaVersion{
+	position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+	width: 122px;
+    z-index: 1;	
+}
+
+#cajaDescargaNuevaVersion img{
+	width: 27px;
+	cursor: pointer;
+	margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#cajaDescargaNuevaVersion span{
+	position: absolute;
+    margin-top: 10px;
+    font-size: 12px!important;
+    color: #1e568f;
+    font-weight: 700!important;
+}
+
+#loginCuerpo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    height: auto;
+    margin-top: -150px;
+    border: 1px solid #d4d6dc;
+    padding: 5px;
+    padding-top: 30px;
+    background-color: rgba(251, 251, 251, 0.61);
+    border-radius: 10px;
+}
+
+.inputLogin{
+	display: block;
+    margin-bottom: 10px;
+    width: 265px;
+    margin-left: 65px;
+}
+
+.inputLogin input{
+	float: right;
+	border: 1px solid gainsboro;
+}
+
+
+
+button#login{
+	background-color: #eaeaea;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+    border-radius: 5px;
+    color: #19538c;
+}
+
+.cajaFichero{
+	display: inline-block;
+}
+
+.fileClick{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 400px;
+    background-color: rgba(179, 179, 179, 0.37);
+}
+
+.fileClick:hover{
+	background-color: rgba(179, 179, 179, 0.65);
+}
+
+.folder{
+	width: 24px;
+	margin-right: 10px;
+}
+
+img#principal{
+	width: 30px;
+	cursor: pointer;
+}
+
+.cajaCabecera{
+	float: right;
+	margin-right: 5px;
+	position: relative;
+}
+
+.classIconosCabecera{
+	cursor: pointer;
+	margin-left: 8px;
+}
+
+#cajaInputCarpeta{
+    width: 240px;
+    float: left;
+    position: relative;
+}
+
+#cajaInputSubeFichero{
+    width: 400px;
+    float: left;
+    position: relative;
+    padding: 5px;
+    background-color: #c9d9e8;
+    border-radius: 5px;
+    margin-top: -6px;
+}
+
+img#imgDescargaNuevaVersion{
+	width: 24px;
+}
+
+img#ordenaNombre{
+	width: 26px;
+    margin-bottom: -2px;
+}
+
+img#nuevaCarpeta{
+	width: 24px;
+}
+
+img#subirFichero{
+	width: 24px;
+}
+
+img#manualUsuario{
+	width: 26px;
+}
+
+img#refrescar{
+	width: 24px;
+}
+
+img#salir{
+	width: 20px;
+}
+.subeFichero{
+	position: absolute;
+    margin-top: -43px;
+    margin-left: 375px;
+    z-index: 1;
+    cursor: pointer;
+    width: 27px;
+}
+
+#labelRecordar{
+	margin-left: 65px;
+}
+
+#recordar{
+	vertical-align: text-top;
+	cursor: pointer;
+}
+
+#labelRecordar span{
+	color: #888888;
+    font-size: 11px!important;
+    font-style: oblique!important;
+}
+
+#rutaNavegacion{
+    position: absolute;
+    margin-left: 36px;
+    margin-top: -26px;
+    cursor: pointer;
+    font-weight: 700!important;
+    max-width: 65%;
+    max-height: 21px;
+    overflow: auto;
+}
+
+.ruta:hover{
+	background-color: #4c4c4c;
+    color: white;
+}
+
+.flechaRutaNavegacion{
+    width: 10px;
+    margin: 0 3px;
+}
+
+#cabecera{
+	position: fixed;
+    background: white;
+    width: 100%;
+	border-bottom: 1px solid;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    min-height: 45px;
+    padding-top: 8px;
+}
+
+.dropzone {
+	float: left;
+    margin-top: 53px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    min-height: 150px;
+    border: 2px dashed #656565;
+    border-radius: 30px;
+    padding: 20px 20px;
+}
+
+#ok{
+    cursor: pointer;
+}
+
+#nombreNuevaCarpeta{
+	border-color: #bdbdbd;
+    background: #f6f7fb;
+}
+
+#cabecera img:hover{
+	box-shadow: 0px 0px 5px 0px;
+    border-radius: 5px;
+    color: black;
+}
+/*Para el dialogo*/
+.izquierda{
+	float: left;
+    width: 50%;
+}
+.derecha{
+	float: right;
+    width: 45%;
+}
+.disabled{
+	cursor: not-allowed;
+}
+.selected{
+	background-color: bisque;
+}
+.btn{
+	padding: 3px 8px!important;
+    font-size: 13.5px!important;
+}
+
+#cajaOpcionesMoverFichero{
+    float: none!important;
+    text-align: center;
+    border-top: 1px solid;
+    padding: 3px 0px;
+}
+
+#cargaFicheros{
+    margin-top: 76px;
+    margin-left: 4%;
+    position: absolute;
+    z-index: -1;
+}

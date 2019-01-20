@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+html {
+	font-family: sans-serif;
+}
+
+button#ok {
+	background-color: #eaeaea;
+	border: 1px solid #d9d9d9;
+	padding: 8px;
+	border-radius: 5px;
+	color: #19538c;
+	cursor: pointer;
+}
+
+#ok:hover {
+	background-color: rgba(179, 179, 179, 0.65);
+}
+
+#cuerpo {
+	padding-top: 2%;
+	text-align: justify;
+	background-image: url(../css/images/backgroundBody.jpg);
+}
+
+.list-group-item {
+	position: relative;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+}
+</style>
+</head>
+<body id="cuerpo">
+	<div>
+		<span id="version"></span>
+		<ul>
+			<li class="list-group-item">Corregido problema al tratar de hacer login con un usuario o contraseña que no existe</li>
+		</ul>
+		<button type="button" name="ok" id="ok" tabindex="3"
+			onclick="window.close();">Vale</button>
+	</div>
+	<script>
+		var version = require("../../package.json")["version"];
+		document.title = 'Últimos cambios para la versión '+version;
+		document.getElementById("version").innerHTML += "Estos son los últimos cambios introducidos en el programa para la versión <strong>"+version+"</strong>:";
+	</script>
+
+</body>
+</html>
